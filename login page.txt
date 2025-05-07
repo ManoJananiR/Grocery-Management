@@ -1,0 +1,170 @@
+Login page.aspx
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login page.aspx.cs" Inherits="Default10" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Grocery Mangaement</title>
+   
+       
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style >
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'poppins';
+  font-family:'raleway';
+}
+body{
+    font-family:'poppins';
+  font-family:'raleway';
+  background-image:url('img/back22.jpg');
+  margin: 0px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items:center !important;
+  height: 100vh;
+}
+.form{
+  width: 405px;
+  height: 440px;
+  background-color: rgba(41, 39, 39, 0.3);
+  box-shadow: 2px 5px 5px 7px black;
+ left: 59%;
+  top: 75%;
+    margin-left: -25%;
+    position:absolute;
+    margin-top: -25%;
+    border-radius:50px 0 50px 0;
+ }
+.btn button {
+  padding: 3px;
+  margin: 30px 0px 40px 30px;
+  border-style: none;
+  background-color: transparent;
+  color: beige;
+  font-size: 18px;
+  font-weight: 550;
+}
+.formGroup{
+  display: flex;
+  justify-content: center;
+}
+.formGroup input{
+  width: 78%;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+        }
+input:focus {
+  outline: none !important;
+  border-bottom: 2px solid rgb(91, 243, 131);
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+::placeholder {
+  color: white;
+}
+.checkBox{
+  display: flex;
+  justify-content: center;
+  margin: 16px!important;
+}
+ 
+#checkbox{
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+.text{
+  color: rgb(199, 197, 197);
+  font-size: 13px;
+}
+.btn2{
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(10, 136, 43);
+  border-style: none;
+  color: white;
+  font-weight: 600;
+}
+.btn2:hover{
+  background-color: rgba(10, 136, 43, 0.5);
+}
+.btn button:hover{
+  border-bottom: 2px solid rgb(91, 243, 131);
+}
+  </style>
+    <form id="form1" runat="server">
+    <div style="height: 16px">
+       
+            <div class="form">
+                <div class="btn">
+                    <button class="signUpBtn">
+                        SIGN UP
+                    </button>
+                </div>
+                <form class="signUp" action="" method="get">
+                    <div class="formGroup">
+                      
+                        <input type="text" id="name" placeholder="User Name" required autocomplete="off" >
+                   
+                    </div>
+                    <div class="formGroup">
+                        
+                        <input type="password" id="password" placeholder="Password" required autocomplete="off">
+                    </div>
+                    <div class="formGroup">
+                       
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+                    </div>
+                    <div class="checkBox">
+                       
+                        <input type="checkbox" name="checkbox" id="checkbox"> <span class="text">I agree with term & conditions</span>
+                    </div>
+                    <div class="formGroup">
+                        <a href='start page.aspx'>
+                        <button type="button" class ="btn2">
+                            REGISTER</button>
+                        </a>
+                </form>
+            </div>
+       
+    </div>
+    </form>
+</body>
+</html>
+
+
+
